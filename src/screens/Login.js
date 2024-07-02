@@ -24,7 +24,6 @@ const Login = ({ navigation }) => {
         }
     };
 
-    // Función para navegar a la pantalla de registro
     const navigateToRegister = () => {
         navigation.navigate('Register');
     };

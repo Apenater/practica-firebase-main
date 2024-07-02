@@ -2,23 +2,22 @@ import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, TextInput, Alert, ActivityIndicator } from 'react-native';
 import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
 
-// Componente Register para registrar un nuevo usuario
 const Register = ({ navigation }) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
-    const [loading, setLoading] = useState(false); // Estado de carga
+    const [loading, setLoading] = useState(false); 
 
     const auth = getAuth();
 
-    // Función para registrar el usuario
+    
     const handleRegister = async () => {
         if (password !== confirmPassword) {
             Alert.alert('Error', 'Las contraseñas no coinciden');
             return;
         }
 
-        setLoading(true); // Iniciar la carga
+        setLoading(true); 
         try {
             await createUserWithEmailAndPassword(auth, email, password);
             Alert.alert('Registro exitoso', 'Usuario registrado correctamente', [
@@ -28,7 +27,7 @@ const Register = ({ navigation }) => {
             console.error('Error al registrar el usuario', error);
             Alert.alert('Error', 'Falló el registro. Por favor verifica los datos e intenta nuevamente.');
         } finally {
-            setLoading(false); // Finalizar la carga
+            setLoading(false);
         }
     };
 
@@ -78,7 +77,6 @@ const Register = ({ navigation }) => {
 
 export default Register;
 
-// Estilos del componente
 const styles = StyleSheet.create({
     container: {
         flex: 1,
