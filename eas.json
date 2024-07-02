@@ -1,0 +1,43 @@
+{
+  "cli": {
+    "version": ">= 10.0.2"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "env": {
+        "API_KEY": "AIzaSyDVD3Py5c_TCDNb5u9udiSXJkhbN5-AIuw",
+        "AUTH_DOMAIN": "practica-firebase-ari-andres.firebaseapp.com",
+        "PROJECT_ID": "practica-firebase-ari-andres",
+        "STORAGE_BUCKET": "practica-firebase-ari-andres.appspot.com",
+        "MESSAGING_SENDER_ID": "136650242732",
+        "APP_ID": "1:136650242732:web:55e5d7b76c6c14e6eebd09"
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "env": {
+        "API_KEY": "AIzaSyDVD3Py5c_TCDNb5u9udiSXJkhbN5-AIuw",
+        "AUTH_DOMAIN": "practica-firebase-ari-andres.firebaseapp.com",
+        "PROJECT_ID": "practica-firebase-ari-andres",
+        "STORAGE_BUCKET": "practica-firebase-ari-andres.appspot.com",
+        "MESSAGING_SENDER_ID": "136650242732",
+        "APP_ID": "1:136650242732:web:55e5d7b76c6c14e6eebd09"
+      }
+    },
+    "production": {
+      "env": {
+        "API_KEY": "AIzaSyDVD3Py5c_TCDNb5u9udiSXJkhbN5-AIuw",
+        "AUTH_DOMAIN": "practica-firebase-ari-andres.firebaseapp.com",
+        "PROJECT_ID": "practica-firebase-ari-andres",
+        "STORAGE_BUCKET": "practica-firebase-ari-andres.appspot.com",
+        "MESSAGING_SENDER_ID": "136650242732",
+        "APP_ID": "1:136650242732:web:55e5d7b76c6c14e6eebd09"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

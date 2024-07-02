@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "firebase-app",
+    "slug": "firebase-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/pokebal_favicon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/practica-firebase.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1680bb"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ari.firebaseapp"
+    },
+    "android": {
+      "permissions": [
+        "CAMERA",
+        "CAMERA_ROLL",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/pokeball.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.danielwilfredo11.firebaseapp"
+    },
+    "web": {
+      "favicon": "./assets/pokebal_favicon.png"
+    }
+  }
+}
